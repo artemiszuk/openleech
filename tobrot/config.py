@@ -9,7 +9,6 @@ class Config(object):
     OWNER_ID = int(os.environ.get("OWNER_ID", 922190664))
     # Get these values from my.telegram.org
     # to store the channel ID who are authorized to use the bot
-    AUTH_CHANNEL = set(int(x) for x in os.environ.get("AUTH_CHANNEL", "-1001494310839 -1001398883981").split())
     # the download location, where the HTTP Server runs
     DOWNLOAD_LOCATION = "./DOWNLOADS"
     # Telegram maximum file upload size
@@ -35,8 +34,8 @@ class Config(object):
     # add offensive API
     TG_OFFENSIVE_API = os.environ.get("TG_OFFENSIVE_API", None)
     CUSTOM_FILE_NAME = os.environ.get("CUSTOM_FILE_NAME", "")
-    LEECH_COMMAND = os.environ.get("LEECH_COMMAND", "uploadasdoc@thunderbase_bot")
-    YTDL_COMMAND = os.environ.get("YTDL_COMMAND", "ytdlasdoc@thunderbase_bot")
+    LEECH_COMMAND = os.environ.get("LEECH_COMMAND", "leech")
+    YTDL_COMMAND = os.environ.get("YTDL_COMMAND", "ytdl")
     RCLONE_CONFIG = os.environ.get("RCLONE_CONFIG", "")
     DESTINATION_FOLDER = os.environ.get("DESTINATION_FOLDER", "TorrentLeech-Gdrive")
     GLEECH_COMMAND = os.environ.get("GLEECH_COMMAND", "gleechnot")
@@ -45,8 +44,8 @@ class Config(object):
     CANCEL_COMMAND_G = os.environ.get("CANCEL_COMMAND_G", "cancel")
     GET_SIZE_G = os.environ.get("GET_SIZE_G", "getsize")
     STATUS_COMMAND = os.environ.get("STATUS_COMMAND", "nostat")
-    SAVE_THUMBNAIL = os.environ.get("SAVE_THUMBNAIL", "saveimg@thunderbase_bot")
-    CLEAR_THUMBNAIL = os.environ.get("CLEAR_THUMBNAIL", "clearimg@thunderbase_bot")
+    SAVE_THUMBNAIL = os.environ.get("SAVE_THUMBNAIL", "saveimg")
+    CLEAR_THUMBNAIL = os.environ.get("CLEAR_THUMBNAIL", "clearimg")
     UPLOAD_AS_DOC = os.environ.get("UPLOAD_AS_DOC", "True")
-    PYTDL_COMMAND_G = os.environ.get("PYTDL_COMMAND_G", "pytdlnot")
+    PYTDL_COMMAND_G = os.environ.get("PYTDL_COMMAND_G", "pytdl")
     LOG_COMMAND = os.environ.get("LOG_COMMAND", "nolog")
