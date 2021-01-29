@@ -22,7 +22,6 @@ from tobrot import (
     TG_BOT_TOKEN,
     APP_ID,
     API_HASH,
-    AUTH_CHANNEL,
     LEECH_COMMAND,
     YTDL_COMMAND,
     GLEECH_COMMAND,
@@ -71,7 +70,7 @@ if __name__ == "__main__" :
     #
     incoming_message_handler = MessageHandler(
         incoming_message_f,
-        filters=Filters.command([f"{LEECH_COMMAND}"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command([f"{LEECH_COMMAND}"])
     )
     app.add_handler(incoming_message_handler)
     #
