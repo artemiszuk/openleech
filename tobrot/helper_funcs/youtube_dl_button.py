@@ -19,7 +19,6 @@ from datetime import datetime
 
 from tobrot import (
     DOWNLOAD_LOCATION,
-    AUTH_CHANNEL
 )
 
 import pyrogram
