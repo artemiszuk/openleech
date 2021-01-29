@@ -2,7 +2,7 @@ import os
 
 class Config(object):
     # get a token from @BotFather
-    TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "1505807892:AAHPu6miPDVtPGOHWFF4NL3BBplUt1244eE")
+    TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
     # The Telegram API things
     APP_ID = int(os.environ.get("APP_ID", 1510975))
     API_HASH = "b4b328c59b4cf46ac328c0d9e105d0fb"
