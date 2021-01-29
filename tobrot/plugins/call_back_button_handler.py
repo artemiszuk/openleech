@@ -17,7 +17,6 @@ from tobrot.helper_funcs.youtube_dl_button import youtube_dl_call_back
 from tobrot.plugins.status_message_fn import cancel_message_f
 from tobrot import (
     MAX_MESSAGE_LENGTH,
-    AUTH_CHANNEL
 )
 async def button(bot, update: CallbackQuery):
     cb_data = update.data
@@ -50,8 +49,6 @@ async def button(bot, update: CallbackQuery):
                 except Exception as e:
                     await i_m_s_e_g.edit_text("<i>FAILED</i>\n\n" + str(e) + "\n#error")
         elif cb_data == "fuckingdo":
-            if update.from_user.id in AUTH_CHANNEL:
-                g_d_list = ['app.json', 'venv', 'rclone.conf', '.gitignore', '_config.yml', 'COPYING', 'Dockerfile', 'DOWNLOADS', 'Procfile', '.heroku', '.profile.d', 'rclone.jpg', 'README.md', 'requirements.txt', 'runtime.txt', 'start.sh', 'tobrot', 'vendor']
                 LOGGER.info(g_d_list)
                 g_list = os.listdir()
                 LOGGER.info(g_list)
