@@ -21,7 +21,6 @@ import io
 
 from tobrot import (
     MAX_MESSAGE_LENGTH,
-    AUTH_CHANNEL,
     BOT_START_TIME,
     LOGGER
 )
@@ -119,7 +118,7 @@ async def cancel_message_f(client, message):
         await message.delete()
 
 async def exec_message_f(client, message):
-    if message.from_user.id in AUTH_CHANNEL:
+    if message.from_user.id
         DELAY_BETWEEN_EDITS = 0.3
         PROCESS_RUN_TIME = 100
         cmd = message.text.split(" ", maxsplit=1)[1]
